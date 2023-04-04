@@ -1,2 +1,4 @@
 .idea
 __pycache__
+myapi.db
+migrations/versions/*
