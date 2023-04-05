@@ -24,7 +24,7 @@
 
 <br>
 
-- http://localhost:8000/docs를 브라우저에서 실행한다.
+- http://localhost:8000/docs 를 브라우저에서 실행한다.
 
 <br>
 
