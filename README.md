@@ -17,13 +17,13 @@
     ```
     alembic init migrations
     ```
-    5-1) alembic.ini 파일 수정
+    5-1) `alembic.ini` 파일 수정
     ```
     (... 생략 ...)
     sqlalchemy.url = sqlite:///./myapi.db
     (... 생략 ...)
     ```
-    5-2) migrations 디렉터리의 env.py 파일 수정
+    5-2) `migrations` 디렉터리의 `env.py` 파일 수정
     ```
     (... 생략 ...)
     import models
@@ -39,4 +39,4 @@
     ```
     alembic upgrade head
     ```
-8. .gitinore 추가
+8. `.gitinore` 추가
