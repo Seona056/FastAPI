@@ -16,10 +16,10 @@
 1. 데이터베이스 세션의 생성과 반환을 자동화 
 2. 의존성 주입  
 
-> `database.py`, `question_router.py` 코드 수정 (3가지 버전 공부)
+> `database.py`, `question_router.py` 코드 수정 (3가지 버전 공부 ✔3️⃣ 최종적용)
 
 ||`database.py`|`question_router.py`|
 |:---:|:---|:---|
 |1️⃣|`get_db()` 함수 선언|`from database import get_db`|
 |2️⃣|- `@contextlib.contextmanager`어노테이션<br>- `try-finally` 예외처리 구문|with 구문으로 자동화|
-|✔3️⃣|어노테이션 삭제 (필수)|- fastapi의 Depends 사용|
+|3️⃣|어노테이션 삭제 (필수)|- fastapi의 Depends 사용|
