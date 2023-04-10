@@ -18,6 +18,7 @@
     ```
     frontend % npm install svelte-spa-router
     ```
+    1-3) 설치 후 다시 서버 실행
 2. `frontend/src`안에 `routes` 디렉터리 생성
 3. `Home.svelte` 파일 생성
 4. `App.svelte` 파일 수정
