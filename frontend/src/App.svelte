@@ -8,4 +8,4 @@
   }
 </script>
 
-<Router {router}/>
+<Router {routes}/>
