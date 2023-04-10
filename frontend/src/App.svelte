@@ -1,19 +1,11 @@
 <script>
-  let question_list = []
+  // svelte에서는 import를 먼저 하고 from을 쓴다.
+  import Router from 'svelte-spa-router'
+  import Home from "./routes/Home.svelte"
 
-  function get_question_list() {
-    fetch("http://localhost:8000/api/question/list").then((response) => {
-      response.json().then((json => {
-          question_list = json
-      }))
-    })
+  const routes = {
+    '/': Home,
   }
-
-  get_question_list()
 </script>
 
-<ul>
-  {#each question_list as question}
-    <li>{question.subject}</li>
-  {/each}
-</ul>
+<Router {router}/>
