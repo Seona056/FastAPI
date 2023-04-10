@@ -14,14 +14,14 @@
 
 1. svelte-spa-router 설치하기  
     1-1) 터미널에서 실행중인 svelte 서버를 중지시킨다. 👉 cmd창에서 `ctrl + c`  
-    1-2) svelte-spa-router 설치
+    1-2) svelte-spa-router 설치  
     ```
     frontend % npm install svelte-spa-router
-    ```
-    1-3) 설치 후 다시 서버 실행
-2. `frontend/src`안에 `routes` 디렉터리 생성
-3. `Home.svelte` 파일 생성
-4. `App.svelte` 파일 수정
+    ```  
+    1-3) 설치 후 다시 서버 실행  
+2. `frontend/src`안에 `routes` 디렉터리 생성  
+3. `Home.svelte` 파일 생성  
+4. `App.svelte` 파일 수정  
 
 <br>
 
