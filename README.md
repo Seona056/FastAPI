@@ -1,20 +1,19 @@
-# FastAPI
+# 2-04 질문 목록 API 만들기
 
 <br>
 
-**점프 투 FastAPI**를 실습  
-FastAPI와 Svelte 등을 다루며, 벡엔드를 프론트엔드로 구동하는 과정을 파악한다.
+- 라우터
+- 의존성 주입(Dependency Injection)
+- **Pydantic으로 하는 입출력 관리** 👈
+- CRUD 파일 작성
 
 <br>
 
-## 각 장의 실습 브랜치
+## 2-04-3 스키마
 
 <br>
 
-실습 파트마다 브랜치를 생성하여 프로젝트의 흐름을 파악할 수 있도록 구성하였다. (실습 내용은 각 브랜치의 리드미 참조)
-
-- 1-06
-- [1-07](https://github.com/Seona056/FastAPI/tree/1-07)
-- [2-02](https://github.com/Seona056/FastAPI/tree/2-02)
-- [2-04-1](https://github.com/Seona056/FastAPI/tree/2-04-1)
-- [2-04-2](https://github.com/Seona056/FastAPI/tree/2-04-2)
+1. pydantic이란?  
+    FastAPI의 입출력 스펙을 정의하고 그 값을 검증하기 위해 사용하는 라이브러리. FastAPI 설치 시 함께 설치된다.
+2. `domain/question` 디렉터리에 `question_schema.py` 파일 생성
+3. `question_router.py` 수정 👉 라우터에 pydantic 적용
