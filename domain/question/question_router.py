@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from database import get_db     # from database import SessionLocal에서 SessionLocal 객체를 반환하는 get_db로 변경
-from domain.question import question_schema     # question_schema.py 파일 생성 후 추가
-from models import Question
+from domain.question import question_schema, question_crud     # question_schema.py, question_crud 파일 생성 후 추가
+# from models import Question       # question_crud 임포트 이후 삭제
 
 router = APIRouter(
     prefix="/api/question",
@@ -33,12 +33,16 @@ def question_list(db: Session = Depends(get_db)):
     
     👉 get_db 함수를 with구문으로 불러오면 with구문이 끝나면 자동으로 db.close()가 실행됨
     
-    3️⃣ 세 번째 실습 코드 : 현재 작성된 fastapi의 depends를 사용한 코드 
+    3️⃣ 세 번째 실습 코드 : fastapi의 depends를 사용한 코드 
     
     👉 with구문이 삭제되면서 database.py의 @contextlib.contextmanager 어노테이션을 삭제한다.
+    
+    def question_list(db: Session = Depends(get_db)):
+        _question_list = db.query(Question).order_by(Question.create_date.desc()).all()
+        return _question_list
     '''
     
-    _question_list = db.query(Question).order_by(Question.create_date.desc()).all()     # 최신글부터 정렬 (역순)
+    _question_list = question_crud.get_question_list(db)    # question_crud.py의 get_question_list()를 사용
     
     return _question_list
     
