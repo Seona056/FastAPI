@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from database import get_db     # from database import SessionLocal에서 SessionLocal 객체를 반환하는 get_db로 변경
+from domain.question import question_schema     # question_schema.py 파일 생성 후 추가
 from models import Question
 
 router = APIRouter(
@@ -9,7 +10,7 @@ router = APIRouter(
 )
 
 
-@router.get("/list")
+@router.get("/list", response_model=list[question_schema.Question])     # question_schema.py 파일 생성 후 response_model 추가 👉 config 클래스에서 orm_mode = True 설정 후 Question 스키마로 자동 매핑된다.
 def question_list(db: Session = Depends(get_db)):
     '''
     1️⃣ 첫 번째 실습 코드

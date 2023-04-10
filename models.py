@@ -4,6 +4,9 @@ from sqlalchemy.orm import relationship
 from database import Base
 
 
+
+# "Question 모델"이라고 지칭한다.
+# domain/question/question_schema.py에서 pydantic의 BaseModel을 상속한 Question 클래스는  "Question 스키마"이다.
 class Question(Base):
     __tablename__ = "question"
     
