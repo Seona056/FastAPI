@@ -1,24 +1,37 @@
-# FastAPI
+# 2-05 질문 목록 화면 만들기
 
 <br>
 
-**점프 투 FastAPI**를 실습  
-FastAPI와 Svelte 등을 다루며, 벡엔드를 프론트엔드로 구동하는 과정을 파악한다.
+- 질문 목록 화면 구현하기
+- 라우터 컴포넌트
+- **API 호출 라이브러리** 👈
 
 <br>
 
-## 각 장의 실습 브랜치
+## 2-05-3 API 호출 라이브러리 
 
 <br>
 
-실습 파트마다 브랜치를 생성하여 프로젝트의 흐름을 파악할 수 있도록 구성하였다. (실습 내용은 각 브랜치의 리드미 참조)
+1. `src/lib` 디렉터리에 `api.js` 파일 생성
+2. `Counter.svelte` 파일 삭제
+3. `projects/myapi/frontend` 디렉터리에 `.env` 파일 생성
+4. `Home.svelte` 파일 수정
 
-- 1-06
-- [1-07](https://github.com/Seona056/FastAPI/tree/1-07)
-- [2-02](https://github.com/Seona056/FastAPI/tree/2-02)
-- [2-04-1](https://github.com/Seona056/FastAPI/tree/2-04-1)
-- [2-04-2](https://github.com/Seona056/FastAPI/tree/2-04-2)
-- [2-04-3](https://github.com/Seona056/FastAPI/tree/2-04-3)
-- [2-04-4](https://github.com/Seona056/FastAPI/tree/2-04-4)
-- [2-05-1](https://github.com/Seona056/FastAPI/tree/2-05-1)
-- [2-05-2](https://github.com/Seona056/FastAPI/tree/2-05-2)
+### 질문 목록 확인
+
+<br>
+
+- http://localhost:5173 를 브라우저에서 실행한다.
+
+<br>
+
+**<위의 링크를 실행하기 전>**
+
+1. FastAPI 서버를 실행 (Uvicorn) : 백엔드 서버
+    ```
+    (myapi) myapi % uvicorn main:app --reload
+    ```
+2. Svelte 서버를 실행 : 프론트엔드 서버
+    ```
+    frontend % npm run dev
+    ```
