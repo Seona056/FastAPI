@@ -13,15 +13,17 @@
 <br>
 
 **백엔드**  
+
 4. `question_crud.py` 파일 수정  
 5. `question_router.py` 파일 수정  
 
-👉 [FastAPI의 docs 문서](http://localhost:8000/docs)에서 새로만든 *질문 상세 조회 API*를 테스트
-👉 `question_id`에 **2** 값을 입력하고 실행 ➡ 출력 확인
+👉 [FastAPI의 docs 문서](http://localhost:8000/docs)에서 새로만든 *질문 상세 조회 API*를 테스트  
+👉 `question_id`에 **2** 값을 입력하고 실행, 출력 확인
 
 <br>
 
 **프론트엔드**  
+
 6. `Detail.svelte` 파일 수정
 
 👉 [FastAPI 페이지](http://localhost:5173)에서 질문을 클릭하면 *질문 상세 조회 API*가 브라우저에 출력
