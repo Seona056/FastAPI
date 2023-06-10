@@ -2,6 +2,8 @@ import datetime
 
 from pydantic import BaseModel
 
+from domain.answer.answer_schema import Answer
+
 
 # pydantic의 BaseModel을 상속한 Question 클래스를 "Question 스키마:라고 부른다.
 # models.py의 Question 클래스는 "Question 모델"이라고 부른다.
@@ -16,6 +18,7 @@ class Question(BaseModel):
     subject: str
     content: str
     create_date: datetime.datetime
+    answers: list[Answer] = []
     
     class Config:
         orm_mode = True
