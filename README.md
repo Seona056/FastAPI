@@ -24,3 +24,4 @@ FastAPI와 Svelte 등을 다루며, 벡엔드를 프론트엔드로 구동하는
 - [2-05-2](https://github.com/Seona056/FastAPI/tree/2-05-2)
 - [2-05-3](https://github.com/Seona056/FastAPI/tree/2-05-3)
 - [2-06](https://github.com/Seona056/FastAPI/tree/2-06)
+- [2-07](https://github.com/Seona056/FastAPI/tree/2-07)
