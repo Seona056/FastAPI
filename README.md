@@ -3,3 +3,15 @@
 <br>
 
 - `Detail.svelte` 수정
+
+
+**<위의 링크를 실행하기 전>**
+
+1. FastAPI 서버를 실행 (Uvicorn) : 백엔드 서버
+    ```
+    (myapi) myapi % uvicorn main:app --reload
+    ```
+2. Svelte 서버를 실행 : 프론트엔드 서버
+    ```
+    frontend % npm run dev
+    ```
