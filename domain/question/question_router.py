@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from database import get_db     # from database import SessionLocal에서 SessionLocal 객체를 반환하는 get_db로 변경
 from domain.question import question_schema, question_crud     # question_schema.py, question_crud 파일 생성 후 추가
 # from models import Question       # question_crud 임포트 이후 삭제
+from starlette import status
 
 router = APIRouter(
     prefix="/api/question",
@@ -52,3 +53,9 @@ def question_list(db: Session = Depends(get_db)):
 def question_detail(question_id: int, db: Session = Depends(get_db)):
     question = question_crud.get_question(db, question_id=question_id)
     return question
+
+
+@router.post("/create", status_code=status.HTTP_204_NO_CONTENT)
+def question_create(_question_create: question_schema.QuestionCreate,
+                    db: Session = Depends(get_db)):
+    question_crud.create_question(db=db, question_create=_question_create)
