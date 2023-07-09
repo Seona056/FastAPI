@@ -4,6 +4,9 @@
 
 - `Detail.svelte` 수정
 
+- http://localhost:5173/#/
+
+<br>
 
 **<위의 링크를 실행하기 전>**
 
