@@ -27,3 +27,9 @@ FastAPI와 Svelte 등을 다루며, 벡엔드를 프론트엔드로 구동하는
 - [2-07](https://github.com/Seona056/FastAPI/tree/2-07)
 - [2-08](https://github.com/Seona056/FastAPI/tree/2-08)
 - [2-09/2-10](https://github.com/Seona056/FastAPI/tree/2-09/2-10)
+
+<br>
+
+> ⛔ 참고사항 ⛔ <br>
+2-09/2-10 부터 갑자기 Vite + svelt 페이지 주소가 http://localhost:5173/ 👉 http://localhost:5174/로 바뀌었다.  
+`main.py` 파일 안의 `origins`의 주소를 바꿔주었다.
