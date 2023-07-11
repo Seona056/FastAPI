@@ -4,7 +4,7 @@
 
 - `Detail.svelte` 수정
 
-- http://localhost:5173/#/
+- http://localhost:5173/
 
 <br>
 
